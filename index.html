@@ -1,9 +1,23 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>My Website Title</title>
-  </head>
-  <body>
-    Hello World
-  </body>
+	<head><title>My Website Title</title></head>
+	<body>
+		<button onClick="onC();">Do the thing...</button>
+		<p id="changeme">Goodbye, World</p>
+		<script>
+			var isHello = false
+			function onC() {
+				if (isHello == false) {
+					var p = document.getElementById("changeme");
+					isHello = true;
+					p.innerHTML = "Hello, World";
+				} else {
+					p = document.getElementById("changeme");
+					isHello = false;
+					p.innerHTML = "Goodbye, World";
+				}
+			}
+		</script>
+	</body>
 </html>
