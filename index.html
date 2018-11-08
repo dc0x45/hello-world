@@ -18,6 +18,23 @@
 					p.innerHTML = "Goodbye, World";
 				}
 			}
+			function onConsole() {
+			console.log("Hello, World")
+			function onPop() {
+			alert("Hello, World")
+			function onBro() {
+			var p = document.getElementById("bro");
+			p.innerHTML = "Hello, World";
+			}
+			function onStr() {
+			var name = prompt("What is your name?");
+			alert("Hello "+ name + "! Have a good day!")
+			}
 		</script>
+		<button onClick="onConsole();">Hello, Console</button>
+		<button onClick="onPop();">Hello, Popup</button>
+		<button onClick="onBro();">Hello, Browser</button>
+		<p id="bro"></p>
+		<button onClick="onStr();">Hello, Stranger</button>
 	</body>
 </html>
